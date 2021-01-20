@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--dark-gray);
+}
+
+.todoMainContainer {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-content: center;
+}
+
+.taskContainer {
+  margin: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.taskHead {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--medium-gray);
+  color: var(--soft-white);
+}
+
+.taskHead > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.5rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.taskCompleteContainer {
+  margin: 3.5rem 2rem 0 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+@media screen and (min-width: 768px) {
+  .taskContainer {
+    margin: 2rem 20% 0 20%;
+  }
+
+  .taskCompleteContainer {
+    margin: 3.5rem 20% 0 20%;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .taskContainer {
+    margin: 2rem 35% 0 35%;
+  }
+
+  .taskCompleteContainer {
+    margin: 3.5rem 35% 0 35%;
+  }
+}

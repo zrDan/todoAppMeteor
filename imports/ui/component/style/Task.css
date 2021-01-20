@@ -1,0 +1,103 @@
+.individualTask {
+  border-bottom: var(--soft-white) 1px solid;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin: 0 0.5rem;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.checkbox > input {
+  display: none;
+}
+
+.individualTask > .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.individualTask > .editOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.individualTask > span {
+  color: var(--soft-white);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  word-wrap: normal;
+}
+
+.individualTask > .inputEdit {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  color: var(--soft-white);
+}
+
+.individualTask > .inputEdit:focus {
+  outline: none;
+}
+
+.deleteItemOption {
+  color: var(--light-red);
+  cursor: pointer;
+}
+
+.deleteItemOption > .checkbox > i {
+  color: var(--light-red);
+  cursor: pointer;
+}
+
+.checkboxContainer > .checkbox > i {
+  color: var(--medium-gray);
+  cursor: pointer;
+}
+
+.checkboxContainer > .checkbox > i:hover {
+  color: var(--light-blue);
+}
+
+.cancelItemOption {
+  color: var(--light-red);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.cancelItemOption > .checkbox > i {
+  color: var(--light-red);
+  cursor: pointer;
+}
+
+.editItemOption {
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.editItemOption > .checkbox > i {
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.complete {
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.complete > span {
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .individualTask {
+    grid-template-columns: 73% 27%;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .individualTask {
+    grid-template-columns: 70% 30%;
+  }
+}

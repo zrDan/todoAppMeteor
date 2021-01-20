@@ -1,0 +1,46 @@
+.newTaskContainer {
+  background-color: var(--light-blue);
+  margin: 2rem 2rem 0 2rem;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.newTaskContainer > input {
+  background-color: var(--medium-gray);
+  border: none;
+  color: var(--soft-white);
+}
+
+.newTaskContainer > input:focus {
+  outline: none;
+}
+
+.newTaskContainer:focus-within {
+  border: 1px solid var(--light-blue);
+}
+
+.newTaskContainer > button {
+  background-color: var(--light-blue);
+  color: var(--soft-white);
+  border: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.newTaskContainer > button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .newTaskContainer {
+    margin: 3rem 20%;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .newTaskContainer {
+    margin: 3rem 35%;
+  }
+}

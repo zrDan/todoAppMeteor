@@ -1,0 +1,97 @@
+.PageContainer {
+  height: 100vh;
+  display: grid;
+  grid-template: 10% 80% 10% / 10% 80% 10%;
+  background-color: var(--dark-gray);
+}
+
+.pageContent {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.signInGrid {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
+
+.logInGrid {
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-blue);
+}
+
+.signInImage {
+  height: 9rem;
+}
+
+.logInImage {
+  height: 5rem;
+}
+
+.pageFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageFormContainer > h3 {
+  color: var(--light-gray);
+  margin: 0;
+}
+
+.accountOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accountOptionsContainer > a {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  color: var(--light-gray);
+}
+
+.accountOptionsContainer > a:hover {
+  color: var(--light-blue);
+}
+
+.goBack {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+}
+
+.goBackContent {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--light-gray);
+  font-weight: 500;
+  margin-left: 0.8rem;
+  text-decoration: none;
+}
+
+.goBackContent > i {
+  margin-right: 0.5rem;
+  transform: rotate(90deg);
+}
+
+@media screen and (min-width: 1152px) {
+  .datos {
+    padding-top: 3rem;
+  }
+}

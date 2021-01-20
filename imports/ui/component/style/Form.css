@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContent {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  height: 2rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.formContent > i {
+  margin: 0 0.5rem;
+  color: var(--light-gray);
+  opacity: 0.5;
+}
+
+.formContent > input {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  color: var(--light-gray);
+}
+
+input::placeholder {
+  color: var(--light-gray);
+  opacity: 0.5;
+}
+
+.formContent > input:focus {
+  outline: none;
+}
+
+.formContent:focus-within {
+  border: 1px solid var(--light-blue);
+}
+
+.form > button {
+  background-color: var(--light-blue);
+  border: none;
+  color: var(--soft-white);
+  height: 2.8rem;
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form > span {
+  color: var(--light-red);
+  margin: 1rem 0;
+}
+
+.acceptButton {
+  margin-top: 3rem;
+}
+
+.acceptButton:focus {
+  outline: none;
+}
